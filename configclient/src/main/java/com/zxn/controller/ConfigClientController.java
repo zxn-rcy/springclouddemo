@@ -7,20 +7,16 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/native")
+@RequestMapping("/remote")
 public class ConfigClientController {
-    @Value("${server.port}")
-    private String port;
-
-
-    @Value("${foo}")
-    private String foo;
+//    @Value("${server.port}")
+    private String port = "1";
 
 
     @ResponseBody
     @RequestMapping("/getConfig")
     public String getNativeConfig(){
-        return port+"    "+foo;
+        return this.port;
     }
 
 }
