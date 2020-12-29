@@ -11,10 +11,11 @@
   <modules>
     <module>eureka</module>
     <module>provider</module>
-      <module>eureka</module>
-      <module>consumer</module>
+    <module>consumer</module>
     <module>configserver</module>
-      <module>configclient</module>
+    <module>configclient</module>
+    <module>zuul</module>
+      <module>FeignConsumer</module>
   </modules>
 
   <name>SpringCloudDemo</name>

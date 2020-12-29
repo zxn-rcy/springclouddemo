@@ -12,7 +12,6 @@ import org.springframework.web.client.RestTemplate;
 import javax.security.auth.login.Configuration;
 
 @SpringBootApplication
-@EnableZuulProxy
 public class ConsumerApplication {
     public static void main(String[] args) {
         SpringApplication.run(ConsumerApplication.class,args);

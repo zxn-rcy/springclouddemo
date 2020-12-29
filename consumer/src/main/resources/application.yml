@@ -1,15 +1,10 @@
 
-
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/
 spring:
   application:
-    name: gateway
-zuul:
-  routes:
-    provider: /p/**
+    name: consumer
 server:
   port: 8020
-#  prefix:
